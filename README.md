@@ -52,6 +52,8 @@ RESTful API Documentation
 =========================
 Navigate to the root URL in your terminal to access Swagger doc in order to test the API.
 
+![alt text](https://github.com/lcdcustodio/gods_unchained/blob/main/picture/swagger.png)
+
 Run Tests
 ===========================
 
