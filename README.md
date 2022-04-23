@@ -12,26 +12,26 @@ Flask application implementing a REST API in order to expose ML model trained pr
 
 Create a virtual environment:
 
-    # Linux/MacOs
-    python3 -m venv venv-gu #create
-    source venv-wc/bin/activate #activate
+    	# Linux/MacOs
+    	python3 -m venv venv-gu #create
+    	source venv-wc/bin/activate #activate
     
-    # Windows
-    python -m venv venv-gu #create
-    venv-gu\Scripts\activate.bat #activate
+    	# Windows
+    	python -m venv venv-gu #create
+    	venv-gu\Scripts\activate.bat #activate
 
 Install version using the following commands:
 
 ```
-    git clone https://github.com/lcdcustodio/gods_unchained.git
-    cd gods_unchained
-    pip install -r requirements.txt (to get the dependencies)
+    	git clone https://github.com/lcdcustodio/gods_unchained.git
+    	cd gods_unchained
+    	pip install -r requirements.txt (to get the dependencies)
 ```    
 
 Next, initialize the database through:
 
 ```
-    python src/db_init.py
+    	python src/db_init.py
 ```
 
 In order to load dataset into database. The database contains required information for the model training.
@@ -39,13 +39,13 @@ In order to load dataset into database. The database contains required informati
 Next step is to train the model through: 
 
 ```
-    python src/train_model.py
+    	python src/train_model.py
 ```
 
 The model is ready! Next step is to launch the API service through:
 
 ```
-    python src/wsgi.py
+    	python src/wsgi.py
 ```
 
 RESTful API Documentation
@@ -58,8 +58,8 @@ Run Tests
 Run the test suite:
 
 ```
-    pytest -v
-    pytest -v --cov=app.strategy  #test coverage
+    	pytest -v
+    	pytest -v --cov=app.strategy  #test coverage
 ```   
 
 See the test coverage report:
@@ -84,8 +84,8 @@ See the test coverage report:
 Deployment and running in a containerized environment, using docker
 
 ```
-    git clone https://github.com/lcdcustodio/gods_unchained.git
-    cd gods_unchained
+    	git clone https://github.com/lcdcustodio/gods_unchained.git
+    	cd gods_unchained
 	docker build -t god_unchained .
 	docker run -p <local_port_>:<container_port_> -t god_unchained:latest
 ``` 	
