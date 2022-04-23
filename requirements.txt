@@ -1,0 +1,14 @@
+Flask
+flask-accepts
+Flask-SQLAlchemy
+marshmallow
+SQLAlchemy
+Werkzeug
+flask-restx
+pytest
+pytest-cov
+pytest-flask
+pandas
+scikit-learn
+numpy
+numpyencoder
