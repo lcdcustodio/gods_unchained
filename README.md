@@ -14,7 +14,7 @@ Create a virtual environment:
 
     	# Linux/MacOs
     	python3 -m venv venv-gu #create
-    	source venv-wc/bin/activate #activate
+    	source venv-gu/bin/activate #activate
     
     	# Windows
     	python -m venv venv-gu #create
